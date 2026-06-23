@@ -1,7 +1,9 @@
 {
-  "name": "com.yourname.main",
-  "version": "0.0.1",
-  "displayName": "main",
-  "description": "",
-  "unity": "2021.3"
+  "name": "com.mirragames.scene-to-prefabs",
+  "version": "1.0.0",
+  "displayName": "Scene To Prefabs Tool",
+  "description": "Batch convert scene meshes to prefabs with deduplication and asset optimization.",
+  "unity": "2021.3",
+  "keywords": ["prefab", "optimization", "editor", "batch"],
+  "type": "tool"
 }
