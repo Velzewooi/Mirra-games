@@ -1,0 +1,19 @@
+<text>
+  <text id="openAuthDialog">Открыть диалог аутентификации</text>
+  <text id="">Авторизация</text>
+  <text id="authorization">Авторизация</text>
+  <text id="advertisment">Объявления</text>
+  <text id="fullAdShow">Полный рекламный показ</text>
+  <text id="resetTimer">Сбросить таймер</text>
+  <text id="rewardAd">Рекламное вознаграждение</text>
+  <text id="stickyOn">Прилипание включено</text>
+  <text id="stickyOff">Залипание выключено</text>
+  <text id="language">Язык</text>
+  <text id="followingALink">Перейдя по ссылке</text>
+  <text id="anyUrl">Любой URL (перейти по ссылке)</text>
+  <text id="shareGame">ПоделитьсяИгрой</text>
+  <text id="other">Другой</text>
+  <text id="gameplayStop">Стоп геймплея
+</text>
+  <text id="gameplayStart">Начало игрового процесса</text>
+</text>

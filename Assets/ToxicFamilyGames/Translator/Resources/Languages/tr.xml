@@ -1,0 +1,19 @@
+<text>
+  <text id="openAuthDialog">Yetkilendirme İletişim Kutusunu Aç</text>
+  <text id="">Yetkilendirme</text>
+  <text id="authorization">Yetkilendirme</text>
+  <text id="advertisment">Reklamlar</text>
+  <text id="fullAdShow">Tam Reklam Gösterisi</text>
+  <text id="resetTimer">Zamanlayıcıyı Sıfırla</text>
+  <text id="rewardAd">Ödül Reklamı</text>
+  <text id="stickyOn">Yapışkan Açık</text>
+  <text id="stickyOff">Yapışkan Kapalı</text>
+  <text id="language">Dil</text>
+  <text id="followingALink">Bir bağlantıyı takip etmek</text>
+  <text id="anyUrl">Herhangi bir URL (bağlantıyı takip edin)</text>
+  <text id="shareGame">Oyunu Paylaş</text>
+  <text id="other">Diğer</text>
+  <text id="gameplayStop">Oynanışı Durdur
+</text>
+  <text id="gameplayStart">Oynanış Başlangıcı</text>
+</text>

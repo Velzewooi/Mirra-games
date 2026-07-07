@@ -1,0 +1,19 @@
+<text>
+  <text id="openAuthDialog">Open Auth Dialog</text>
+  <text id="">Autorization</text>
+  <text id="authorization">Autorization</text>
+  <text id="advertisment">Ads</text>
+  <text id="fullAdShow">FullAd Show</text>
+  <text id="resetTimer">Reset Timer</text>
+  <text id="rewardAd">Reward Ad</text>
+  <text id="stickyOn">Sticky On</text>
+  <text id="stickyOff">Sticky Off</text>
+  <text id="language">Language</text>
+  <text id="followingALink">Following a link</text>
+  <text id="anyUrl">Any URL (follow the link)</text>
+  <text id="shareGame">ShareGame</text>
+  <text id="other">Other</text>
+  <text id="gameplayStop">Gameplay Stop
+</text>
+  <text id="gameplayStart">Gameplay Start</text>
+</text>
