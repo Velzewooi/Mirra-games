@@ -14,7 +14,9 @@ public class MirraSDKFunctions : ScriptableObject
             print("IsAdsAvailable: " + MirraSDK.Ads.IsAdsAvailable);
             print("IsBannerAvailable: " + MirraSDK.Ads.IsBannerAvailable);
             print("IsInterstitialAvailable: " + MirraSDK.Ads.IsInterstitialAvailable);
+            print("IsInterstitialReady: " + MirraSDK.Ads.IsInterstitialReady);
             print("IsRewardedAvailable: " + MirraSDK.Ads.IsRewardedAvailable);
+            print("IsRewardedReady: " + MirraSDK.Ads.IsRewardedReady);
             print("IsGameReadyAvailable: " + MirraSDK.Analytics.IsGameplayReporterAvailable);
             print("Language: " + language);
             print("IsMobile: " + isMobile);
