@@ -6,6 +6,8 @@ using MirraGames.SDK.Common;
 [CreateAssetMenu(fileName = "MirraTime")]
 public class Time : ScriptableObject
 {
+    public static float time => UnityEngine.Time.time;
+    
     public static float timeScale
     {
         get => MirraSDK.Time.Scale;

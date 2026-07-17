@@ -1,13 +1,20 @@
 {
   "dependencies": {
+    "com.mirrasdk.crazygames.api": {
+      "version": "https://github.com/MirraSDK/SDK5-CrazyGames-API.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "595e7fa1f8eb28abceb9d1e222758019782315d5"
+    },
     "com.romanlee17.mirrasdk5": {
-      "version": "https://github.com/MirraSDK/SDK5.git",
+      "version": "git@github.com:Mirra-account/SDK5-TEST.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.addressables": "1.0.0"
       },
-      "hash": "5f4e2e05de81b23eec0b48b1c16d2aba6c89ab9c"
+      "hash": "af2839ec3987d397e696611260f5dc19cbc1d6b6"
     },
     "com.unity.addressables": {
       "version": "2.9.1",

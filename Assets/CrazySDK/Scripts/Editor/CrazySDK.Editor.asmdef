@@ -1,0 +1,18 @@
+{
+    "name": "CrazySDK.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a81d5b282c55b73418e23254551781ac"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
