@@ -1,5 +1,5 @@
 {
-    "name": "CrazySDK.Editor",
+    "name": "CrazySDKEditor",
     "rootNamespace": "",
     "references": [
         "GUID:a81d5b282c55b73418e23254551781ac"

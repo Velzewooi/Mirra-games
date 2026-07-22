@@ -5,9 +5,9 @@ using UnityEngine.Serialization;
 
 namespace CrazyGames
 {
-    /// <summary>
-    /// Contains public data that can be modified by the game developers that use the SDK.
-    /// </summary>
+    /**
+    * Contains public data that can be modified by the game developers that use the SDK.
+    */
     public class CrazySettings : ScriptableObject
     {
         [Tooltip("SiteLock doesn't block these domains. Here you can add the domains where your game is hosted.")]

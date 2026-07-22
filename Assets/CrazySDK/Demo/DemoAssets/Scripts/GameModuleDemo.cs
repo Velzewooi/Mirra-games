@@ -9,7 +9,7 @@ namespace CrazyGames
     {
         public Text instantJoinText;
         public Text settingsText;
-        public InputField roomNameInput;
+        public InputField roomIdInput;
         public Toggle joinableToggle;
         public Toggle dontSentId;
 
@@ -25,7 +25,7 @@ namespace CrazyGames
                 }
             );
             CrazySDK.Game.AddJoinRoomListener(JoinRoomListener);
-            roomNameInput.text = "123";
+            roomIdInput.text = "123";
         }
 
         private void JoinRoomListener(Dictionary<string, string> parameters)
@@ -60,7 +60,7 @@ namespace CrazyGames
 
         public void InviteLink()
         {
-            var parameters = new Dictionary<string, string> { { "roomName", "1234" }, { "otherParameter", " uri encoded string" } };
+            var parameters = new Dictionary<string, string> { { "roomId", "1234" }, { "otherParameter", " uri encoded string" } };
             var inviteLink = CrazySDK.Game.InviteLink(parameters);
             Debug.Log("Invite link (also copied to clipboard): " + inviteLink);
             CrazySDK.Game.CopyToClipboard(inviteLink);
@@ -68,7 +68,8 @@ namespace CrazyGames
 
         public void ShowInviteButton()
         {
-            var parameters = new Dictionary<string, string> { { "roomName", "1234" } };
+            var parameters = new Dictionary<string, string>();
+            parameters.Add("roomId", "1234");
             var inviteLink = CrazySDK.Game.ShowInviteButton(parameters);
             Debug.Log("Invite button link: " + inviteLink);
         }
@@ -86,7 +87,7 @@ namespace CrazyGames
             }
             else
             {
-                var roomId = CrazySDK.Game.GetInviteLinkParameter("roomName");
+                var roomId = CrazySDK.Game.GetInviteLinkParameter("roomId");
                 Debug.Log($"Invite link param roomId = {roomId}");
             }
         }
@@ -94,17 +95,14 @@ namespace CrazyGames
         public void OnUpdateRoomClick()
         {
             var input = new UpdateRoomInput();
-            var region = "eu";
             if (!dontSentId.isOn)
             {
-                // keep a unique room id across regions
-                input.RoomId = roomNameInput.text + region;
+                input.RoomId = roomIdInput.text;
             }
             if (joinableToggle.isOn)
             {
                 input.IsJoinable = true;
-                // you can append more invite params as needed
-                input.InviteParams = new Dictionary<string, string>() { { "roomName", roomNameInput.text }, { "region", region } };
+                input.InviteParams = new Dictionary<string, string>() { { "roomId", roomIdInput.text }, { "region", "eu" } };
             }
             else
             {
@@ -116,17 +114,6 @@ namespace CrazyGames
         public void OnLeftRoomClick()
         {
             CrazySDK.Game.LeftRoom();
-        }
-
-        public void OnSetGameContextClick()
-        {
-            var context = new Dictionary<string, string>() { { "level", "1" } };
-            CrazySDK.Game.SetGameContext(context);
-        }
-
-        public void OnClearGameContextClick()
-        {
-            CrazySDK.Game.ClearGameContext();
         }
     }
 }

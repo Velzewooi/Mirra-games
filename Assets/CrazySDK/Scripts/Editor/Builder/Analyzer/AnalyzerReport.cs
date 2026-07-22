@@ -6,7 +6,7 @@ using Unity.ProjectAuditor.Editor;
 
 namespace CrazyGames
 {
-    /// <summary>Contains the analysis report of the build with various optimization suggestions.</summary>
+    /** Contains the analysis report of the build with various optimization suggestions. */
     public class AnalyzerReport
     {
         public List<AudioOptimization> audioOptimizations = new List<AudioOptimization>();

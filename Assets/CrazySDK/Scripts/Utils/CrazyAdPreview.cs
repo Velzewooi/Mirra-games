@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-/// <summary>
-/// Renders a placeholder for video ads in editor.
-/// </summary>
+/**
+ * Renders a placeholder for video ads in editor.
+ */
 public class CrazyAdPreview : MonoBehaviour
 {
     public string labelText;

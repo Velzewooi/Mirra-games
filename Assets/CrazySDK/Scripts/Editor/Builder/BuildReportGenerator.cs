@@ -55,7 +55,7 @@ namespace CrazyGames
     /// </summary>
     public class BuildReportGenerator
     {
-        private const string BUILD_SCRIPT_VERSION = "1.4.0";
+        private const string BUILD_SCRIPT_VERSION = "1.3.0";
 
         public void GenerateReport(
             BuildReport report,

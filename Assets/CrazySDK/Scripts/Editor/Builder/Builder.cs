@@ -219,13 +219,7 @@ namespace CrazyGames
                     return BuildOptions.Development | BuildOptions.AutoRunPlayer; // to start the game in browser;
                 case BuildVariant.Release:
                     return BuildOptions.AutoRunPlayer // to start the game in browser
-#if !UNITY_6000_4_OR_NEWER
-                        // to avoid sometimes packedAssets being empty
-                        // however Unity 6.4 has an issue and the build fails if CleanBuildCache is used (internal build error, backend has requested build program 6 times)
-                        // but CleanBuildCache doesn't seems necessary for 6.4 anyways, as packedAssets was always populated there
-                        | BuildOptions.CleanBuildCache
-#endif
-                    ;
+                        | BuildOptions.CleanBuildCache; // to avoid sometimes packedAssets being empty
                 default:
                     throw new System.ArgumentOutOfRangeException(nameof(variant), variant, "Unknown build variant");
             }

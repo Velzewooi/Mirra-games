@@ -242,21 +242,6 @@ mergeInto(LibraryManager.library, {
       window.UnitySDK.logError('Error while calling leftRoom:', e);
     }
   },
-  SetGameContextSDK: function (contextStr) {
-    var context = JSON.parse(window.unityStringify(contextStr));
-    try {
-      window.CrazyGames.SDK.game.setGameContext(context);
-    } catch (e) {
-      window.UnitySDK.logError('Error while calling setGameContext:', e);
-    }
-  },
-  ClearGameContextSDK: function () {
-    try {
-      window.CrazyGames.SDK.game.clearGameContext();
-    } catch (e) {
-      window.UnitySDK.logError('Error while calling clearGameContext:', e);
-    }
-  },
 
   /** SDK.user module */
   IsUserAccountAvailableSDK: function () {
@@ -323,18 +308,6 @@ mergeInto(LibraryManager.library, {
     try {
       var payload = {
         encryptedScore: window.unityStringify(score)
-      };
-
-      window.CrazyGames.SDK.user.submitScore(payload);
-    } catch (e) {
-      window.UnitySDK.logError('Error while calling submitScore:', e);
-    }
-  },
-  SubmitUserScoreV2SDK: function (encryptedScore, score) {
-    try {
-      var payload = {
-        encryptedScore: window.unityStringify(encryptedScore),
-        score: score
       };
 
       window.CrazyGames.SDK.user.submitScore(payload);

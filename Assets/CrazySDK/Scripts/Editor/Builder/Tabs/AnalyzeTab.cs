@@ -8,7 +8,7 @@ using Unity.ProjectAuditor.Editor;
 
 namespace CrazyGames
 {
-    /// <summary>Displays the tab content with the analyzer suggestions. Also takes care of running the analysis whenever required.</summary>
+    /** Displays the tab content with the analyzer suggestions. Also takes care of running the analysis whenever required. */
     class AnalyzeTab : ITab
     {
         private bool _showResources = false;
@@ -141,7 +141,7 @@ namespace CrazyGames
             if (_showHelp)
             {
                 EditorGUILayout.HelpBox(
-                    "Initial load size is the size of the 4 main files (wasm, framework, loader, data) in the Build directory. This may be different from the \"Load size\" displayed on QA, as that one includes all the loaded files, including asset bundles, until the first gameplay start event.",
+                    "Initial load size is the size of the 4 main files (wasm, framework, loader, data) in the Build directory.",
                     MessageType.Info
                 );
             }

@@ -14,7 +14,7 @@
       "dependencies": {
         "com.unity.addressables": "1.0.0"
       },
-      "hash": "af2839ec3987d397e696611260f5dc19cbc1d6b6"
+      "hash": "28587e86adab0f08b23c0a267116a5b7f995143a"
     },
     "com.unity.addressables": {
       "version": "2.9.1",

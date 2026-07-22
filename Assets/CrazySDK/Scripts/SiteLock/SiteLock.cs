@@ -8,9 +8,9 @@ using UnityEngine;
 
 namespace CrazyGames
 {
-    /// <summary>
-    /// Site locking is checked on game start.
-    /// </summary>
+    /**
+     * Site locking is checked on game start.
+     */
     public class SiteLock
     {
         public const string sitelockVersion = "1.9.0";

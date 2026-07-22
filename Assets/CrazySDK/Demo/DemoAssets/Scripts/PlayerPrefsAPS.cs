@@ -15,7 +15,7 @@ namespace CrazyGames
         public string str;
     }
 
-    /// <summary>Utility for testing APS with PlayerPrefs</summary>
+    /** Utility for testing APS with PlayerPrefs **/
     public class PlayerPrefsAPS : MonoBehaviour
     {
         public Text playerPrefsText;

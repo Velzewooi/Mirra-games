@@ -283,7 +283,7 @@ namespace CrazyGames
             float score = 152.1f;
             string encryptionKey = "mKwl+7lX7n87tJ41eNbRMcvIYVcYjZG71sas3EIMxoU=";
             string encryptedScore = ScoreEncryption.EncryptScore(score, encryptionKey);
-            CrazySDK.User.SubmitScore(encryptedScore, score);
+            CrazySDK.User.SubmitScore(encryptedScore);
         }
 
         public async void ListFriends()

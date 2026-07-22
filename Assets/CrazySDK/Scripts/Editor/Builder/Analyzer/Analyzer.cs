@@ -10,7 +10,7 @@ using Unity.ProjectAuditor.Editor;
 
 namespace CrazyGames
 {
-    /// <summary>Builds the AnalyzerReport based on the provided build report summary.</summary>
+    /** Builds the AnalyzerReport based on the provided build report summary. */
     public class Analyzer
     {
         private readonly List<string> MODEL_FORMATS = new List<string>() { ".fbx", ".dae", ".3ds", ".dxf", ".obj" };

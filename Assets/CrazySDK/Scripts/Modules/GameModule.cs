@@ -215,19 +215,6 @@ namespace CrazyGames
             _crazySDK.WrapSDKAction(LeftRoomSDK, () => { });
         }
 
-        public void SetGameContext(Dictionary<string, string> context)
-        {
-            var contextJson = context != null ? Utils.ConvertDictionaryToJson(context) : "null";
-            _crazySDK.DebugLog($"Set game context: {contextJson}");
-            _crazySDK.WrapSDKAction(() => SetGameContextSDK(contextJson), () => { });
-        }
-
-        public void ClearGameContext()
-        {
-            _crazySDK.DebugLog("Clear game context called");
-            _crazySDK.WrapSDKAction(ClearGameContextSDK, () => { });
-        }
-
 #if UNITY_WEBGL
         [DllImport("__Internal")]
         private static extern void HappyTimeSDK();
@@ -270,12 +257,6 @@ namespace CrazyGames
 
         [DllImport("__Internal")]
         private static extern string GetInviteParamsSDK();
-
-        [DllImport("__Internal")]
-        private static extern void SetGameContextSDK(string contextJson);
-
-        [DllImport("__Internal")]
-        private static extern void ClearGameContextSDK();
 #else
         private void HappyTimeSDK() { }
 
@@ -320,10 +301,6 @@ namespace CrazyGames
             return "";
         }
 
-        private void SetGameContextSDK(string contextJson) { }
-
-        private void ClearGameContextSDK() { }
-
 #endif
     }
 
@@ -344,11 +321,6 @@ namespace CrazyGames
             if (InviteParams != null)
                 entries.Add($"\"inviteParams\":{Utils.ConvertDictionaryToJson(InviteParams)}");
             return "{" + string.Join(",", entries) + "}";
-        }
-
-        public override string ToString()
-        {
-            return Serialize();
         }
     }
 }

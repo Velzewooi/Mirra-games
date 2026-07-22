@@ -1,15 +1,3 @@
-# 5.31.0
-
-- `SubmitScore` method now has an overload accepting the plain score as a second argument.
-
-# 5.30.0
-
-- Add `SetGameContext` and `ClearGameContext` methods to `Game` module.
-
-# 5.29.0
-
-- Add `__dangerousUserId` to the user.
-
 # 5.28.0
 
 - `UpdateRoom` method now accepts an input object with the following parameters: `RoomId`, `IsJoinable`, `InviteParams`.

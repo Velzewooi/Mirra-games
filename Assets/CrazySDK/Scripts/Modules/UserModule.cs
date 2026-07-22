@@ -25,16 +25,14 @@ namespace CrazyGames
         private Action<SdkError, bool> _accountLinkPromptCallback;
         private bool _authListenerRegisteredInHTMLSDK = false;
 
-        private readonly PortalUser _demoUser1 = new()
+        private readonly PortalUser _demoUser1 = new PortalUser
         {
-            __dangerousUserId = "idUser1",
             username = "User1",
             profilePictureUrl = "https://images.crazygames.com/userportal/avatars/1.png",
         };
 
-        private readonly PortalUser _demoUser2 = new()
+        private readonly PortalUser _demoUser2 = new PortalUser
         {
-            __dangerousUserId = "idUser2",
             username = "User2",
             profilePictureUrl = "https://images.crazygames.com/userportal/avatars/2.png",
         };
@@ -382,29 +380,18 @@ namespace CrazyGames
             AddUserScoreSDK(score);
         }
 
-        public void SubmitScore(string encryptedScore)
+        public void SubmitScore(string score)
         {
             if (Application.isEditor)
             {
-                _crazySDK.DebugLog("Submit score: " + encryptedScore);
+                _crazySDK.DebugLog("Submit score: " + score);
                 return;
             }
 
-            SubmitUserScoreSDK(encryptedScore);
+            SubmitUserScoreSDK(score);
         }
 
-        public void SubmitScore(string encryptedScore, float score)
-        {
-            if (Application.isEditor)
-            {
-                _crazySDK.DebugLog("Submit score: " + encryptedScore + ", plain: " + score);
-                return;
-            }
-
-            SubmitUserScoreV2SDK(encryptedScore, score);
-        }
-
-        /// <summary>Retrieve user system info (country, OS, browser, device)</summary>
+        /** Retrieve user system info (country, OS, browser, device)  */
         public SystemInfo SystemInfo
         {
             get
@@ -621,9 +608,6 @@ namespace CrazyGames
         private static extern void SubmitUserScoreSDK(string score);
 
         [DllImport("__Internal")]
-        private static extern void SubmitUserScoreV2SDK(string encryptedScore, float score);
-
-        [DllImport("__Internal")]
         private static extern void SyncUnityGameDataSDK();
 
         [DllImport("__Internal")]
@@ -652,8 +636,6 @@ namespace CrazyGames
         private void AddUserScoreSDK(float score) { }
 
         private void SubmitUserScoreSDK(string score) { }
-
-        private void SubmitUserScoreV2SDK(string encryptedScore, float score) { }
 
         private void SyncUnityGameDataSDK() { }
 
@@ -737,36 +719,19 @@ namespace CrazyGames
     [Serializable]
     public class PortalUser
     {
-        /// <summary>
-        /// Avoid using this user ID for authentication purposes, GetUserToken() should be used for that.
-        /// </summary>
-        public string __dangerousUserId;
         public string username;
         public string profilePictureUrl;
 
         public override string ToString()
         {
-            return base.ToString()
-                + "Id = "
-                + __dangerousUserId
-                + ", Username = "
-                + username
-                + ", profile picture url = "
-                + profilePictureUrl;
+            return base.ToString() + "Username = " + username + ", profile picture url = " + profilePictureUrl;
         }
     }
 
     [Serializable]
-    public class Friend
+    public class Friend : PortalUser
     {
         public string id;
-        public string username;
-        public string profilePictureUrl;
-
-        public override string ToString()
-        {
-            return base.ToString() + "Id = " + id + ", Username = " + username + ", profile picture url = " + profilePictureUrl;
-        }
     }
 
     [Serializable]

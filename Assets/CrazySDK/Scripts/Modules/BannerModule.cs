@@ -18,10 +18,10 @@ namespace CrazyGames
             _crazySDK = crazySDK;
         }
 
-        /// <summary>
-        /// Banners that are active (activeInHierarchy) will be refreshed.
-        /// Banners that were removed or hidden in the meantime will get hidden.
-        /// </summary>
+        /**
+         * Banners that are active (activeInHierarchy) will be refreshed.
+         * Banners that were removed or hidden in the meantime will get hidden.
+         */
         public void RefreshBanners()
         {
             var visibleBanners = _banners.Where(b => b.IsVisible()).ToList();

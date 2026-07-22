@@ -8,7 +8,7 @@ namespace CrazyGames
 {
     public class CrazySDK : MonoBehaviour
     {
-        public const string Version = "5.31.0";
+        public const string Version = "5.28.0";
         public CrazySettings Settings { get; private set; }
         public static bool IsInitialized { get; private set; }
         public static bool IsShutDown { get; private set; }
@@ -98,12 +98,12 @@ namespace CrazyGames
         [Obsolete("Please use IsAvailable instead")]
         public static bool IsOnCrazyGames => IsAvailable;
 
-        /// <summary>
-        /// Returns 'true' if the game is running on CrazyGames domains, or on our partner websites embedding the game.
-        /// Returns 'true' in the Editor, since CrazySDK works in the Editor also.
-        /// Returns 'true' on localhost, since CrazySDK works on localhost also (be sure to use the provided WebGL template).
-        /// Returns 'false' when the game is running on any whitelisted domains in CrazyGamesSettings file.
-        /// </summary>
+        /**
+         * Returns 'true' if the game is running on CrazyGames domains, or on our partner websites embedding the game.
+         * Returns 'true' in the Editor, since CrazySDK works in the Editor also.
+         * Returns 'true' on localhost, since CrazySDK works on localhost also (be sure to use the provided WebGL template).
+         * Returns 'false' when the game is running on any whitelisted domains in CrazyGamesSettings file.
+         */
         public static bool IsAvailable
         {
             get
@@ -364,13 +364,13 @@ namespace CrazyGames
     {
         public string countryCode;
 
-        /// <summary>Example: "en-US"</summary>
+        /** Example: "en-US" */
         public string locale;
 
-        /// <summary>For browser and os, format is the same as https://github.com/faisalman/ua-parser-js</summary>
+        /** For browser and os, format is the same as https://github.com/faisalman/ua-parser-js **/
         public Software browser;
 
-        /// <summary>For browser and os, format is the same as https://github.com/faisalman/ua-parser-js</summary>
+        /** For browser and os, format is the same as https://github.com/faisalman/ua-parser-js **/
         public Software os;
 
         public Device device;
@@ -398,7 +398,7 @@ namespace CrazyGames
     [Serializable]
     public class Device
     {
-        /// <summary>Possible values: "desktop", "tablet", "mobile"</summary>
+        /** Possible values: "desktop", "tablet", "mobile" */
         public string type;
 
         public override string ToString()
