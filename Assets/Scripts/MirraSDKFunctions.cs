@@ -30,7 +30,7 @@ public class MirraSDKFunctions : ScriptableObject
             print("PlayerUsername: " + MirraSDK.Player.Username);
             print("PlayerID: " + MirraSDK.Player.UniqueId);
             print("PlayerIsLogin: " + MirraSDK.Player.IsLoggedIn);
-            
+            MirraSDK.Analytics.GameIsReady();
             Resources.Load<TranslateSettings>(nameof(TranslateSettings)).SwitchLanguage(language.ToString());
             MirraSDK.Payments.RestorePurchases(restoreData =>
             {
