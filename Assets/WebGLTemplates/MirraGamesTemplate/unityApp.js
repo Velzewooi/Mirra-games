@@ -253,8 +253,8 @@ const unityApp = {
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         const devicePixelRatio = this.toNumber("{{{ DEVICE_PIXEL_RATIO }}}");
-        console.log("devicePixelRatio", devicePixelRatio);
-        if (this.isNumber(devicePixelRatio)) {
+        if (this.isNumber(devicePixelRatio) && devicePixelRatio != 0) {
+            console.log("devicePixelRatio", devicePixelRatio);
             config.devicePixelRatio = this.toNumber(devicePixelRatio);
         }
 

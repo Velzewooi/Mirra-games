@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.mirrasdk.applovin.api": {
+      "version": "https://github.com/MirraSDK/SDK5-AppLovin-API.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "94181958fd2f510473f336e70fb3a99d6288a78c"
+    },
     "com.romanlee17.mirrasdk5": {
       "version": "git@github.com:MirraSDK/SDK5.git",
       "depth": 0,

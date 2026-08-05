@@ -23,9 +23,253 @@
                 "stringCollection": [
                     {
                         "key": "Configuration",
-                        "value": "YouTubePlayablesConfiguration"
+                        "value": "GooglePlay"
                     }
                 ]
+            }
+        },
+        {
+            "key": "GooglePlay",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "ITime.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IPlayer.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IPlatform.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IPayments.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IPause.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "ILanguage.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IFlags.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IDevice.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IData.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IBootstrap.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAudio.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAssets.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    },
+                    {
+                        "key": "IAnalytics.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAchievements.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAds.Override",
+                        "value": true
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": [
+                    {
+                        "key": "IAds.AdsProvider",
+                        "value": "AppLovinAds"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "RuStore",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "IAchievements.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAnalytics.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    },
+                    {
+                        "key": "IBootstrap.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IDevice.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IFlags.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "ILanguage.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IPause.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAds.Override",
+                        "value": true
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": [
+                    {
+                        "key": "IAds.AdsProvider",
+                        "value": "AppLovinAds"
+                    },
+                    {
+                        "key": "AppLovinAds_Configuration",
+                        "value": "{\"InterstitialAdLoadInterval\":0.0,\"RewardedAdLoadInterval\":0.0}"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "FallbackConfiguration",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    },
+                    {
+                        "key": "IData.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IDevice.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IFlags.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "ILanguage.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IPause.Visible",
+                        "value": false
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": []
+            }
+        },
+        {
+            "key": "EditorConfiguration",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    },
+                    {
+                        "key": "IDevice.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IDevice.Override",
+                        "value": false
+                    },
+                    {
+                        "key": "IData.Visible",
+                        "value": false
+                    },
+                    {
+                        "key": "IAds.Override",
+                        "value": false
+                    },
+                    {
+                        "key": "IAnalytics.Visible",
+                        "value": false
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": []
+            }
+        },
+        {
+            "key": "HuaweiAppGallery",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": []
+            }
+        },
+        {
+            "key": "Aptoide",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": []
+            }
+        },
+        {
+            "key": "AmazonAppStore",
+            "group": {
+                "boolCollection": [
+                    {
+                        "key": "IAds.Visible",
+                        "value": true
+                    }
+                ],
+                "intCollection": [],
+                "floatCollection": [],
+                "stringCollection": []
             }
         }
     ]
